@@ -1,0 +1,6 @@
+Flask
+Flask-RESTful
+Jinja2
+MarkupSafe
+Werkzeug
+

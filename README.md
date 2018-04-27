@@ -19,7 +19,9 @@ is proxied and forwarded through nginx
 
 2. Setup Python Virtual Environment
 ```bash
-virtualenv .venv
+$ virtualenv .venv
+$ source .venv/bin/activate
+$ pip install -r requirements.txt
 ```
 
 
