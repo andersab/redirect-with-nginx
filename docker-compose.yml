@@ -3,16 +3,23 @@ version: '3'
 services:
   app1:
     build:
-      context: .
-      dockerfile: pyapp/Dockerfile
+      context: pyapp
+      dockerfile: Dockerfile
     ports:
       - "5001:5001"
     command: [ "python", "/usr/src/app/app.py", "5001", "1" ]
 
   app2:
     build:
-      context: .
-      dockerfile: pyapp/Dockerfile
+      context: pyapp
+      dockerfile: Dockerfile
     ports:
       - "5002:5002"
     command: [ "python", "/usr/src/app/app.py", "5002", "2" ]
+
+  nginx:
+    build:
+      context: ./nginx
+      dockerfile: Dockerfile
+    ports:
+      - "9080:9080"
