@@ -2,4 +2,4 @@ Flask
 Flask-RESTful
 Jinja2
 Werkzeug
-
+requests
